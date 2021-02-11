@@ -494,8 +494,10 @@ console.log(addressAll); */
             divAddress.append(divHN);
 } */
 
-/* Дано 2 масиви з рівною кількістю об'єктів. Масиви: */
-let usersWithId = [
+/* 23 Дано 2 масиви з рівною кількістю об'єктів. Масиви: З'єднати в один об'єкт користувача та місто з відповідними "id" та "user_id" . Записати цей об'єкт в новий масив
+Частковий приклад реультату:
+let usersWithCities = [{id: 1, name: 'vasya', age: 31, status: false, address: {user_id: 1, country: 'Ukraine', city: 'Ternopil'}}....] */
+/*let usersWithId = [
     { id: 1, 
     name: 'vasya', 
     age: 31, 
@@ -529,9 +531,6 @@ let citiesWithId = [
     city: 'Miami' }
 ];
 
-/* 23 З'єднати в один об'єкт користувача та місто з відповідними "id" та "user_id" . Записати цей об'єкт в новий масив
-Частковий приклад реультату:
-let usersWithCities = [{id: 1, name: 'vasya', age: 31, status: false, address: {user_id: 1, country: 'Ukraine', city: 'Ternopil'}}....] */
 let usersWithCities = usersWithId;
 for (const user of usersWithId) {
     for (const city of citiesWithId) {
@@ -540,4 +539,102 @@ for (const user of usersWithId) {
         }
     }
 }
-console.log(usersWithCities);
+console.log(usersWithCities); */
+
+/* 24 створити розмітці блок з id, class та текстом в середені. Зчитати окремо цей текст з селекторів по id , class та тегу */
+/*document.getElementsByTagName('div')[0];
+document.getElementsByClassName('class')[0];
+document.getElementById('id'); */
+
+/* 25 змінити цей текст використовуючи селектори id, class,  tag */
+/*document.getElementsByTagName('div')[0].innerText = 'Hello';
+document.getElementsByClassName('class')[0].innerText = 'Goodbye';
+document.getElementById('id').innerText = 'Very good!'; */
+
+/* 26 змінити висоту та ширину блоку використовуючи селектори id, class, tag */
+/*document.getElementsByTagName('div')[0].style.width = '500px';
+document.getElementsByClassName('class')[0].style.height = '500px';
+document.getElementById('id').style.border = '1px solid black'; */
+
+/* 27 за допомоги document.createElement та appendChild створити таблицю на 1 рядок з трьома ячейками всередені */
+/*let table = document.createElement('table');
+let tr = document.createElement('tr');
+table.append(tr);
+for (let i = 0; i < 3; i++) {
+    let td = document.createElement('td');
+    td.style.border = '1px solid black';
+    tr.append(td);
+}
+
+table.style.width = '200px';
+table.style.height = '200px';
+document.body.appendChild(table); */
+
+/* 28 за допомоги document.createElement, appendChild та циклу створити таблицю на 10 рядків з трьома ячейками всередені */
+/*let table = document.createElement('table');
+
+for (let i = 0; i < 10; i++) {
+    let tr = document.createElement('tr');
+    table.append(tr);
+    for (let j = 0; j < 3; j++) {
+        let td = document.createElement('td');
+        td.style.border = '1px solid black';
+        tr.append(td);
+    }
+}
+
+table.style.width = '200px';
+table.style.height = '200px';
+document.body.appendChild(table); */
+
+/* 29 за допомоги document.createElement, appendChild та 2х циклів створити таблицю на 10 рядків з 5 ячейками всередені */
+/*let table = document.createElement('table');
+
+for (let i = 0; i < 10; i++) {
+    let tr = document.createElement('tr');
+    table.append(tr);
+    for (let j = 0; j < 5; j++) {
+        let td = document.createElement('td');
+        td.style.border = '1px solid black';
+        tr.append(td);
+    }
+}
+
+table.style.width = '200px';
+table.style.height = '200px';
+document.body.appendChild(table); */
+
+/* 30 за допомоги document.createElement, appendChild та 2х циклів створити таблицю на n рядків з m ячейками всередені. n та m отримати з prompt */
+/*let n = prompt('String: ');
+let m = prompt('Cell: ');
+
+let table = document.createElement('table');
+
+for (let i = 0; i < n; i++) {
+    let tr = document.createElement('tr');
+    table.append(tr);
+    for (let j = 0; j < m; j++) {
+        let td = document.createElement('td');
+        td.style.border = '1px solid black';
+        tr.append(td);
+    }
+}
+
+table.style.width = '200px';
+table.style.height = '200px';
+document.body.appendChild(table); */
+
+/* 31 Завантажити з мережі будь-який шаблон сайту. Підключити до нього свій скріпт-файл. У файлі прописати наступні доступи та дії
+ - знайти всі елементі, які мають class */
+/*document.querySelectorAll('[class]') */;
+
+/* 32 знайти всі параграфи ,та змінити текст на hello oktenweb! */
+/*for (const i of document.getElementsByTagName('p')) {
+    i.innerText = 'Hello okten!';
+} */
+
+/* 33 знайти всі div та змінити ім колір на червоний */
+/*for (const i of document.getElementsByTagName('div')) {
+    i.style.color = 'red';
+} */
+
